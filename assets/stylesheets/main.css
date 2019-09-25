@@ -1,0 +1,95 @@
+/* HEATMAP COLORS */
+:root {
+    --one: rgb(0, 0, 0);
+    --two: rgb(25, 25, 25);
+    --three: rgb(50, 50, 50);
+    --four: rgb(75, 75, 75);
+    --five: rgb(100, 100, 100);
+    --six: rgb(125, 125, 125);
+    --seven: rgb(150, 150, 150);
+    --eight: rgb(175, 175, 175);
+    --nine: rgb(200, 200, 200);
+    --ten: rgb(255, 255, 255);
+}
+
+/* GRID SETUP */
+body > * {
+    display: grid;
+    border: 2px solid red;
+}
+
+.header-nav {
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    height: 168px;
+}
+
+.main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto;
+    height: 1255px; 
+}
+
+.main-articles {
+    grid-template-columns: 1fr 1fr;
+}
+
+.old-articles {
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 3068.32px;
+}
+
+.old {
+    height: 485.283px;
+}
+
+.add {
+    width: 301.633px;
+    height: 317.45px;
+}
+
+.red {
+    width: 691px;
+    height: 485.85px;
+}
+
+.red:first-child {
+    height: 723px;
+}
+
+.red:nth-child(2) {
+    height: 671px;
+}
+
+.red:nth-child(3) {
+    height: 882px;
+}
+
+.book-section {
+    height: 1050px;
+    width: 100%;
+}
+
+.community-section {
+    grid-template-columns: 1fr 1fr;
+    height: 1930.67px;
+}
+
+.community-section .old {
+    height: 497.55px;
+    width: 448.133px;
+}
+
+.book-section {
+    grid-template-columns: 1fr 2fr;
+    height: 334.433px;
+}
+
+.guides-section {
+    grid-template-columns: repeat(3, 1fr);
+    height: 1982.32px;
+}
+
+.footer {
+    height: 721px;
+}
