@@ -42,7 +42,22 @@ body > * {
   width: 100%;
   height: 168px;
   background-color: var(--three);
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.nav-item {
+    background-color: var(--four);
+    margin: 10px 0;
+}
+
+.logo {
+    background-color: var(--two);
+}
+
+.nav-btn {
+    background-color: var(--five);
 }
 
 .main {
@@ -61,14 +76,33 @@ body > * {
 }
 
 .main-header {
-  background-color: var(--one);
+  background-color: var(--five);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  grid-gap: 60px;
+}
+
+.main-header h1 {
+    background-color: var(--one);
+    height: 50px;
+    width: 100%;
+    grid-column: 2;
+}
+
+.main-color {
+    background-color: var(--six);
+    height: 50px;
+    width: 75%;
+    grid-column: 3;
+    justify-self: center;
 }
 
 .main-article {
   /* width: 49%;
   height: 553.9px; */
   /* border: 5px solid red; */
-  background-color: var(--two);
+  background-color: var(--five);
 }
 
 /* .main-article:nth-child(1),
@@ -87,7 +121,11 @@ body > * {
 
 .old-articles .red {
   grid-column-end: span 2;
-  background-color: var(--two);
+  background-color: var(--three);
+}
+
+.old-articles .old {
+    background-color: var(--seven);
 }
 
 .old {
@@ -96,14 +134,14 @@ body > * {
   /* width: 343.25px; */
 }
 
-.old-articles a {
+.old-articles a, .guides-section a {
   grid-column: 1 / -1;
   height: 50px;
-  background-color: var(--five);
+  background-color: var(--eight);
 }
 
 .add {
-  background-color: var(--six);
+  background-color: var(--five);
   width: 301.633px;
   height: 317.45px;
   align-self: start;
@@ -112,7 +150,7 @@ body > * {
 
 .print-section {
   height: 902.583px;
-  background-color: var(--three);
+  background-color: var(--four);
 }
 
 [class|="community-article"] {
@@ -123,7 +161,7 @@ body > * {
 .community-article-person {
   /* width: 100%; */
   grid-column: 1 / -1;
-  background-color: var(--three);
+  background-color: var(--six);
 }
 
 .red {
@@ -146,6 +184,8 @@ body > * {
 .book-section {
   height: 1050px;
   width: 100%;
+  background-color: var(--four);
+  margin: 20px 0;
 }
 
 .community-section {
@@ -158,12 +198,12 @@ body > * {
 
 .community-section a {
   grid-column: 1 / -1;
-  background-color: var(--five);
+  background-color: var(--eight);
 }
 
 .community-article {
   /* width: 448.133px; */
-  background-color: var(--four);
+  background-color: var(--seven);
 }
 
 .book-section {
@@ -173,9 +213,23 @@ body > * {
 
 .guides-section {
   grid-template-columns: repeat(3, 1fr);
-  height: 1982.32px;
+  /*height: 1982.32px;*/
+  grid-gap: 20px;
+  grid-template-rows: repeat(2, 860px);
+  grid-gap: 20px;
+}
+
+.guides-section .old {
+    background-color: var(--seven);
+}
+
+.guides-section .red {
+    grid-column-end: span 2;
+    background-color: var(--two);
 }
 
 .footer {
   height: 721px;
+  background-color: var(--three);
+  margin-top: 20px;
 }
