@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "dog";
+  src: url("../fonts/OPTIFormula-One.otf");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+
 /* HEATMAP COLORS */
 :root {
   --one: rgb(0, 0, 0);
@@ -35,6 +42,7 @@ p {
 body > * {
   display: grid;
   /* border: 2px solid red; */
+  font-family: "dog", sans-serif;
 }
 
 .header-nav {
@@ -47,17 +55,50 @@ body > * {
   grid-gap: 10px;
 }
 
+.main-article p:first-child span {
+  font-family: "Courgette", cursive;
+  font-size: 1.5rem;
+}
+
+.main-article small {
+  font-size: 0.9rem;
+}
+
+.main-article h2 {
+  font-size: 2rem;
+}
+
+.main-article {
+  color: white;
+}
+
+.main-article p:last-child {
+  font-size: 0.9rem;
+}
+
+.main-article p:last-child span {
+  color: black;
+}
+
+.main-article p {
+  font-size: 1.2rem;
+}
+
+.min-article {
+  color: white;
+}
+
 .nav-item {
-    background-color: var(--four);
-    margin: 10px 0;
+  background-color: var(--four);
+  margin: 10px 0;
 }
 
 .logo {
-    background-color: var(--two);
+  background-color: var(--two);
 }
 
 .nav-btn {
-    background-color: var(--five);
+  background-color: var(--five);
 }
 
 .main {
@@ -80,22 +121,28 @@ body > * {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-content: center;
-  grid-gap: 60px;
+  /* grid-gap: 30px; */
 }
 
 .main-header h1 {
-    background-color: var(--one);
-    height: 50px;
-    width: 100%;
-    grid-column: 2;
+  background-color: var(--one);
+  /* height: 50px; */
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+  grid-column: 2;
+  letter-spacing: -1.5px;
+  line-height: 1.5;
+  word-spacing: 5px;
 }
 
 .main-color {
-    background-color: var(--four);
-    height: 50px;
-    width: 75%;
-    grid-column: 3;
-    justify-self: center;
+  background-color: var(--four);
+  height: 50px;
+  width: 75%;
+  grid-column: 3;
+  justify-self: center;
 }
 
 .main-article {
@@ -125,7 +172,7 @@ body > * {
 }
 
 .old-articles .old {
-    background-color: var(--seven);
+  background-color: var(--seven);
 }
 
 .old {
@@ -134,7 +181,8 @@ body > * {
   /* width: 343.25px; */
 }
 
-.old-articles a, .guides-section a {
+.old-articles a,
+.guides-section a {
   grid-column: 1 / -1;
   height: 50px;
   background-color: var(--eight);
@@ -220,12 +268,12 @@ body > * {
 }
 
 .guides-section .old {
-    background-color: var(--seven);
+  background-color: var(--seven);
 }
 
 .guides-section .red {
-    grid-column-end: span 2;
-    background-color: var(--two);
+  grid-column-end: span 2;
+  background-color: var(--two);
 }
 
 .footer {
