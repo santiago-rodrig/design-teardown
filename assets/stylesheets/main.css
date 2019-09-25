@@ -12,6 +12,10 @@
     --ten: rgb(255, 255, 255);
 }
 
+div, section, article, h1, h2, p {
+    border: 2px solid red;
+}
+
 /* GRID SETUP */
 body > * {
     display: grid;
@@ -34,6 +38,15 @@ body > * {
     grid-template-columns: 1fr 1fr;
 }
 
+.main-article {
+    width: 49%;
+    height: 553.90px;
+}
+
+.main-article:nth-child(1), .main-article:nth-child(2) {
+    height: 699.15px;
+}
+
 .old-articles {
     grid-template-columns: 1fr 1fr 1fr;
     height: 3068.32px;
@@ -41,6 +54,20 @@ body > * {
 
 .old {
     height: 485.283px;
+    width: 343.25px;
+}
+
+.print-section {
+    height: 902.583px;
+}
+
+[class|='community-article'] {
+    height: 320px;
+    width: 442.05px;
+}
+
+.community-article-person {
+    width: 100%;
 }
 
 .add {
@@ -49,8 +76,8 @@ body > * {
 }
 
 .red {
-    width: 691px;
-    height: 485.85px;
+    width: 770.684px;
+    height: 685.417px;
 }
 
 .red:first-child {
