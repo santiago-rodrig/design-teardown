@@ -115,10 +115,10 @@ body > * {
 }
 
 .nav-item p {
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--ten);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ten);
 }
 
 .icon {
@@ -154,10 +154,10 @@ body > * {
 }
 
 .nav-btn p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    letter-spacing: 2px;
-    padding-bottom: 5px; 
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
 }
 
 .main {
@@ -316,8 +316,8 @@ body > * {
 .old-articles {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 550px 690px 550px 690px;
-  grid-template-rows: repeat(2, 650px 780px);
+  -ms-grid-rows: 650px 840px 650px 840px;
+  grid-template-rows: repeat(2, 650px 840px);
   grid-auto-rows: 150px;
 }
 
@@ -407,7 +407,7 @@ body > * {
   background-color: var(--four);
   align-self: start;
   justify-self: start;
-  height: 720px;
+  height: 750px;
   width: 800px;
   margin-top: 40px;
   border-radius: 15px;
@@ -415,39 +415,40 @@ body > * {
 }
 
 .red {
-    color: var(--ten);
-    text-align: center;
+  color: var(--ten);
+  text-align: center;
 }
 
 .red h2 {
-    font-size: 2.4rem;
-    margin: 30px;
-    text-decoration: underline var(--eight);
-    line-height: 130%;
+  font-size: 2.4rem;
+  margin: 30px;
+  text-decoration: underline var(--eight);
+  line-height: 130%;
 }
 
 .red-details {
-    margin: 40px auto;
-    width: 65%;
-    font-size: 1.2rem;
-    line-height: 160%;
+  margin: 40px auto;
+  width: 65%;
+  font-size: 1.2rem;
+  line-height: 160%;
 }
 
 .explore-btn p {
-    padding: 15px 25px;
-    font-size: 1.1rem;
-    text-align: left;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  text-align: left;
 }
 
-.red .red-details a, .red .red-small a.red-link {
-    background-color: transparent;
-    text-decoration: underline var(--eight);
-    color: var(--ten);
+.red .red-details a,
+.red .red-small a.red-link {
+  background-color: transparent;
+  text-decoration: underline var(--eight);
+  color: var(--ten);
 }
 
 .red .red-small {
-    margin: 10px;
-    font-size: 0.8rem;
+  margin: 10px;
+  font-size: 0.8rem;
 }
 
 .old-articles > a {
@@ -506,39 +507,39 @@ body > * {
 }
 
 .add p small {
-    color: var(--six);
-    font-size: 0.85rem;
+  color: var(--six);
+  font-size: 0.85rem;
 }
 
 .add .add-logo {
-    position: relative;
-    font-size: 2.25rem;
-    width: max-content;
-    margin: 20px auto;
+  position: relative;
+  font-size: 2.25rem;
+  width: max-content;
+  margin: 20px auto;
 }
 
 .add .add-logo:before {
-    position: absolute;
-    content: "";
-    height: 2.25rem;
-    width: 40px;
-    left: -50px;
-    background-color: var(--four);
+  position: absolute;
+  content: "";
+  height: 2.25rem;
+  width: 40px;
+  left: -50px;
+  background-color: var(--four);
 }
- 
+
 .add-details {
-    margin: 40px auto;
+  margin: 40px auto;
 }
 
 .add-details > p.sub-title {
-    font-size: 0.75rem;
-    margin: 20px;
+  font-size: 0.75rem;
+  margin: 20px;
 }
 
 .add-details p:not(.sub-title) {
-    font-size: 1rem;
-    line-height: 165%;
-    margin: 0 0 40px 0;
+  font-size: 1rem;
+  line-height: 165%;
+  margin: 0 0 40px 0;
 }
 
 .add > p {
@@ -555,12 +556,49 @@ body > * {
 
 .print-div {
   height: 902.583px;
-  background-color: var(--four);
+  background-color: var(--six);
+  padding: 80px;
+  text-align: center;
+}
+
+.print-div .explore-btn {
+  width: 412px;
+  padding: 19px 24px;
+  margin-bottom: 53px;
+  margin-top: 25px;
+}
+
+.print-div-cat {
+  width: 920px;
+  height: 520px;
+  background-color: var(--three);
+  margin: 0 auto;
 }
 
 .community-article-person {
   grid-column: 1 / -1;
   background-color: var(--six);
+  display: flex;
+}
+
+.community-article-person > * {
+  flex: 2;
+}
+
+.community-article-person > *:first-child {
+  flex: 1;
+}
+
+.week-person-image {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.week-person-image > div {
+  width: 287px;
+  height: 287px;
+  background-color: var(--three);
 }
 
 /* .red:nth-child(2) {
@@ -578,10 +616,10 @@ body > * {
 }
 
 .community-div {
-  -ms-grid-columns: 1fr 20px 1fr;
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 320px 20px 497.55px 20px 497.55px 20px 497.55px;
-  grid-template-rows: 320px repeat(3, 497.55px);
+  -ms-grid-rows: 500px 430px 430px 430px;
+  grid-template-rows: 500px repeat(3, 430px);
   grid-auto-rows: 50px;
 }
 
@@ -641,19 +679,53 @@ body > * {
   grid-column: 3;
 } */
 
-.community-div a {
+.community-div > a {
   grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  width: max-content;
+  padding: 5px;
+  text-align: center;
   background-color: var(--eight);
 }
 
 .community-article {
   background-color: var(--seven);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 40px;
+}
+
+.community-article-image {
+  display: grid;
+  align-items: start;
+  justify-items: center;
 }
 
 .book-div {
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
-  height: 334.433px;
+  /* height: 334.433px; */
+  display: flex;
+}
+
+.book-div > * {
+  flex: 2;
+}
+
+.book-div > *:last-child {
+  flex: 1;
+}
+
+.awesome-book-container {
+  position: relative;
+}
+
+.awesome-book {
+  width: 256px;
+  height: 374px;
+  background-color: var(--three);
+  position: absolute;
 }
 
 .guides-div {
@@ -726,40 +798,40 @@ body > * {
 }
 
 .footer-header {
-    font-weight: 600;
-    font-size: 0.8rem;
-    word-spacing: 0.3rem;
-    margin: 50px 0 10px 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  word-spacing: 0.3rem;
+  margin: 50px 0 10px 0;
 }
 
 .footer .footer-links {
-    margin: 40px;
+  margin: 40px;
 }
 
 .footer .footer-links ul {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: disc;
-    width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: disc;
+  width: 1024px;
 }
 
 .footer .footer-links ul li {
-    margin: 20px;
+  margin: 20px;
 }
 
 .footer-details {
-    margin: 40px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 .footer-sublinks {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    text-decoration: underline;
-    margin: 15px 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  text-decoration: underline;
+  margin: 15px 0;
 }
 
 .footer-sublinks li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
