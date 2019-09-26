@@ -316,12 +316,28 @@ body > * {
 }
 
 .old-articles {
+    position: relative;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 650px 840px 650px 840px;
   grid-template-rows: repeat(2, 650px 840px);
   grid-auto-rows: 50px;
   background-color: var(--eight);
+}
+
+.weird-left-float-thing {
+    font-family: "Courier New", Courier, monospace;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    margin-top: -50px;
+    z-index: 10;
+}
+
+.weird-left-float-thing span {
+    letter-spacing: -0.2rem
 }
 
 .old-articles .arrow {
@@ -475,8 +491,9 @@ body > * {
 .cat-image {
   width: 255px;
   height: 290px;
-  background-color: var(--three);
+  background-color: var(--two);
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .old-articles .old {
@@ -706,11 +723,16 @@ body > * {
 }
 
 .community-div {
+  position: relative;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 500px 430px 430px 430px;
   grid-template-rows: 500px repeat(3, 430px);
   grid-auto-rows: 50px;
+}
+
+.community-div a {
+    color: var(--two);
 }
 
 /* .community-div > *:nth-child(1) {
@@ -813,11 +835,29 @@ body > * {
 }
 
 .guides-div {
+  position: relative;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 700px 900px;
   grid-template-rows: 700px 900px;
   background-color: var(--eight);
+}
+
+.guides-div .old h2 {
+    text-decoration: none;
+    margin: 10px auto 30px auto;
+}
+
+.guides-div .old ul {
+    padding-left: 35px;
+}
+
+.guides-div .old li {
+    margin: 30px 0;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    width: max-content;
+    text-align: left;
 }
 
 /* .guides-div > *:nth-child(1) {
@@ -874,7 +914,7 @@ body > * {
 .guides-div .red {
   -ms-grid-column-span: 2;
   grid-column-end: span 2;
-  background-color: var(--two);
+  background-color: var(--three);
   align-self: start;
   justify-self: start;
   margin: 50px 0 0 50px;
@@ -890,15 +930,22 @@ body > * {
 }
 
 .bird-image {
-  width: 173px;
+  max-width: 173px;
+  margin-left: 100px;
   height: 221px;
   background-color: var(--two);
+  flex-basis: 33%;
+  fl
 }
 
 .hunter-cat-image {
   width: 306px;
   height: 200px;
   background-color: var(--two);
+}
+
+.footer {
+   font-family: "Courier New", Courier, monospace;
 }
 
 .footer .flex-wrapper {
@@ -909,8 +956,9 @@ body > * {
 
 .footer-header {
   font-weight: 600;
-  font-size: 0.8rem;
-  word-spacing: 0.3rem;
+  font-size: 0.9rem;
+  word-spacing: -0.1rem;
+  letter-spacing: 0.15rem;
   margin: 50px 0 10px 0;
 }
 
@@ -928,11 +976,17 @@ body > * {
 }
 
 .footer .footer-links ul li {
-  margin: 20px;
+  margin: 15px;
+  font-size: 1.2rem;
+  letter-spacing: -0.1rem;
 }
 
 .footer-details {
   margin: 40px 0 20px 0;
+}
+
+.footer-details a {
+    color: var(--ten);
 }
 
 .footer-sublinks {
