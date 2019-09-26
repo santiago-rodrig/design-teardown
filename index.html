@@ -14,20 +14,27 @@
         <div class="logo nav-item"></div>
         <div class="nav-item">
           <div class="icon"></div>
+          <p>Articles</p>
         </div>
         <div class="nav-item">
           <div class="icon"></div>
+          <p>Books</p>
         </div>
         <div class="nav-item">
           <div class="icon"></div>
+          <p>Events</p>
         </div>
         <div class="nav-item">
           <div class="icon"></div>
+          <p>Jobs</p>
         </div>
         <div class="nav-item">
           <div class="icon"></div>
+          <p>Membership</p>
         </div>
-        <div class="nav-btn nav-item"></div>
+        <div class="nav-btn nav-item">
+          <p>Topics</p>
+        </div>
       </nav>
     </header>
     <main class="main">
@@ -140,20 +147,22 @@
         <div class="arrow"></div>
       </article>
       <div class="add">
-        <p>Our friends and supporters</p>
+        <p><small>Our friends and supporters</small> </p>
         <div class="add-content">
-          <h3 class="add-logo"></h3>
-          <p>FLATFILE</p>
-          <p>Create a delightful data import experience for costumers without weeks of development with Flatfile</p>
-          <div class="add-btn">TRY IT FREE</div>
+          <h3 class="add-logo">flatfile</h3>
+          <div class="add-details">
+              <p class="sub-title">FLATFILE</p>
+              <p>Create a delightful data import experience for costumers without weeks of development with Flatfile</p>
+              <div class="add-btn">TRY IT FREE</div>
+          </div>
         </div>
       </div>
       <article class="red">
         <div class="cat-image"></div>
-        <h2>1,620 smashing members</h2>
-        <p>A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month. <a href="#">Join the family.</a></p>
-        <div class="explore-btn">Explore features</div>
-        <p>Already have an account? <a href="#">Sign in!</a></p>
+        <h2>1,620 smashing<br/> members</h2>
+        <p class="red-details">A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month. <a href="#">Join the family.</a></p>
+        <div class="explore-btn"><p>Explore features</p></div>
+        <p class="red-small">Already have an account? <a class="red-link" href="#">Sign in!</a></p>
       </article>
       <article class="old">
         <p><small>13 DAYS AGO</small></p>
@@ -207,9 +216,9 @@
       <article class="red">
         <div class="cat-image"></div>
         <h2>1,620 smashing members</h2>
-        <p>A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month. <a href="#">Join the family.</a></p>
-        <div class="explore-btn">Explore features</div>
-        <p>Already have an account? <a href="#">Sign in!</a></p>
+        <p class="red-details">A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month. <a href="#">Join the family.</a></p>
+        <div class="explore-btn"><p>Explore features</p></div>
+        <p class="red-small">Already have an account? <a class="red-link" href="#">Sign in!</a></p>
       </article>
       <a href="#">SE ALL ARTICLES</a>
     </div>
@@ -368,10 +377,10 @@
       </article>
       <article class="red">
         <h2>1,620 smashing members</h2>
-        <p>A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month. <a href="#">Join the family.</a></p>
+        <p class="red-details">A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month. <a href="#">Join the family.</a></p>
         <div class="cat-image"></div>
-        <div class="explore-btn">Explore features</div>
-        <p>Already have an account? <a href="#">Sign in!</a></p>
+        <div class="explore-btn"><p>Explore features</p></div>
+        <p class="red-small">Already have an account? <a class="red-link" href="#">Sign in!</a></p>
         <!-- <h2>Smashing Newsletter</h2>
         <p>
           Imagine you wrote a beautiful song and nobody discovered it. That
@@ -391,53 +400,58 @@
       <a href="#">SEE ALL ARTICLES</a>
     </div>
     <footer class="footer">
-      <h3>BROWSE ALL SMASHING MAGAZINE TOPICS</h3>
-      <ul>
-        <li>Accessibility</li>
-        <li>Android</li>
-        <li>Animation</li>
-        <li>Apps</li>
-        <li>CSS</li>
-        <li>Design</li>
-        <li>Design Patters</li>
-        <li>Design Systems</li>
-        <li>E-Commerce</li>
-        <li>Freebies</li>
-        <li>Graphics</li>
-        <li>HTML</li>
-        <li>Illustrator</li>
-        <li>Inspiration</li>
-        <li>IOS</li>
-        <li>Javascript</li>
-        <li>Mobile</li>
-        <li>Pattern Libraries</li>
-        <li>Performance</li>
-        <li>Photoshop</li>
-        <li>Plugins</li>
-        <li>React</li>
-        <li>Responsive Web Design</li>
-        <li>Service Workers</li>
-        <li>Sketch</li>
-        <li>Typography</li>
-        <li>UI</li>
-        <li>Usability</li>
-        <li>User Experience</li>
-        <li>Wallpapers</li>
-        <li>Web Design</li>
-        <li>WordPress</li>
-        <li>Workflow</li>
-      </ul>
-      <p>
-        With a commitment to quality content for the design community. Founded
-        by Vitaly Friedman and Sven Lennartz. 2006-2019. Smashing is proudly
-        running on <a href="">Netlify.</a> Fonts by <a href="">Latinotypes.</a>
-      </p>
-      <ul>
+      <h3 class="footer-header">BROWSE ALL SMASHING MAGAZINE TOPICS</h3>
+      <nav class="footer-links">
+          <ul>
+              <li>Accessibility</li>
+              <li>Android</li>
+              <li>Animation</li>
+              <li>Apps</li>
+              <li>CSS</li>
+              <li>Design</li>
+              <li>Design Patters</li>
+              <li>Design Systems</li>
+              <li>E-Commerce</li>
+              <li>Freebies</li>
+              <li>Graphics</li>
+              <li>HTML</li>
+              <li>Illustrator</li>
+              <li>Inspiration</li>
+              <li>IOS</li>
+              <li>Javascript</li>
+              <li>Mobile</li>
+              <li>Pattern Libraries</li>
+              <li>Performance</li>
+              <li>Photoshop</li>
+              <li>Plugins</li>
+              <li>React</li>
+              <li>Responsive Web Design</li>
+              <li>Service Workers</li>
+              <li>Sketch</li>
+              <li>Typography</li>
+              <li>UI</li>
+              <li>Usability</li>
+              <li>User Experience</li>
+              <li>Wallpapers</li>
+              <li>Web Design</li>
+              <li>WordPress</li>
+              <li>Workflow</li>
+            </ul>
+      </nav>
+      <div class="footer-details">
+          <p>With a commitment to quality content for the design community.</p>
+          <p>Founded by Vitaly Friedman and Sven Lennartz. 2006-2019.</p>
+           <p>Smashing is proudly running on <a href="">Netlify.</a></p>
+           <p>Fonts by <a href="">Latinotypes.</a>
+          </p>
+      </div>
+      
+      <ul class="footer-sublinks">
         <li>Write for us</li>
         <li>Contact us</li>
         <li>About us (Impressum)</li>
       </ul>
-      <ul>
+      <ul class="footer-sublinks">
         <li>Privacy policy</li>
         <li>Membership login</li>
         <li>Delivery times</li>
