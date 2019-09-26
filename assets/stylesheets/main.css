@@ -17,6 +17,7 @@
   --eight: rgb(175, 175, 175);
   --nine: rgb(200, 200, 200);
   --ten: rgb(255, 255, 255);
+  --blue-clues: #006fc6;
 }
 
 html {
@@ -57,12 +58,15 @@ body > * {
 
 .main-article .flex-wrapper p {
   margin-left: 20px;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
-.main-article p:first-child span {
+.main-article .flex-wrapper p span {
   font-family: "Courgette", cursive;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: italic;
+  font-weight: 400;
 }
 
 .main-article small {
@@ -70,8 +74,14 @@ body > * {
 }
 
 .main-article h2 {
-  font-size: 2rem;
-  line-height: 150%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 125%;
+  margin: 15px 0;
+}
+
+.hashtags {
+    margin: 25px 0;
 }
 
 .main-article {
@@ -79,17 +89,11 @@ body > * {
   padding: 50px;
 }
 
-.main-article p:last-child {
-  font-size: 0.9rem;
-}
-
 .main-article p:last-child span {
   color: var(--one);
   word-spacing: -1px;
 }
 
-.main-article p:last-child span:first-child {
-}
 
 .main-article sup {
   vertical-align: super;
@@ -97,10 +101,6 @@ body > * {
   word-spacing: -1px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
-}
-
-.main-article p {
-  font-size: 1.2rem;
 }
 
 .min-article {
@@ -225,6 +225,15 @@ body > * {
   word-spacing: 5px;
 }
 
+.main-header h1 span {
+    background-color: var(--ten);
+    padding: 10px 15px;
+}
+
+.main-header h1 span:nth-of-type(2) {
+    padding-top: 5px;
+}
+
 .main-color {
   background-color: var(--four);
   height: 60px;
@@ -233,6 +242,15 @@ body > * {
   grid-column: 3;
   -ms-grid-column-align: center;
   justify-self: center;
+}
+
+.main-color  p {
+    color: var(--ten);
+    font-size: 1.17rem;
+    border: 2px solid var(--ten);
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
 
 .main-article {
@@ -277,6 +295,32 @@ body > * {
   -ms-grid-rows: 485.283px 20px 685.417px 20px 485.283px 20px 685.417px;
   grid-template-rows: repeat(2, 485.283px 685.417px);
   grid-auto-rows: 50px;
+}
+
+.old h2 {
+    font-size: 1.65rem;
+    text-decoration: underline;
+    line-height: 130%;
+}
+
+.old .old-author + p {
+    font-size: 1.25rem;
+    line-height: 150%;
+    margin: 20px 0;
+}
+
+.old .old-author + p a {
+    color: var(--blue-clues);
+    background-color: transparent;
+}
+
+.old-articles .old-author {
+    margin: 20px 0;
+}
+
+.old-author, .old-articles .old-author a {
+    color: var(--five);
+    background-color: transparent;
 }
 
 /* .old-articles > *:nth-child(1) {
