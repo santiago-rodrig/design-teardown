@@ -2,7 +2,7 @@
 
 ## Summary
 
-[Smash Magazine](https://www.smashingmagazine.com) heatmap, visual hierarchy practice for UX.
+[Smash Magazine](https://www.smashingmagazine.com) heatmap, visual hierarchy practice for UX. Live version [here](https://santiago-rodrig.github.io/design-teardown).
 
 ## Tools
 
